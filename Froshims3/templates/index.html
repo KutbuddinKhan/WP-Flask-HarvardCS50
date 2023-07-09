@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froshima 2</title>
+</head>
+<body>
+    <h1>Register for Frosh IMs</h1>
+    <form action="/register" method="post">
+        <input type="text" name="name" placeholder="name">
+        <select name="dorm" id="">
+            <option disabled selected value="">Dorm</option>
+            <option value="Apley Court">Apley Court</option>
+            <option value="Canaday">Canaday</option>
+            <option value="Cedar Hill">Cedar Hill</option>
+            <option value="Chapel View">Chapel View</option>
+            <option value="Clarkson Hall">Clarkson Hall</option>
+            <option value="College Avenue East">College Avenue East</option>
+            <option value="East Campus">East Campus</option>
+            <option value="Franklin Dining Commons">Franklin Dining Commons</option>
+            <option value="Garden Level West">Garden Level West</option>
+            <option value="Greenhouse Gymnasium">Greenhouse Gymnasium</option>
+            <option value="Hallam Wayne Manor">Hallam Wayne Manor </option>
+            <option value="Kyle Rogers Center">Kyle Rogers Center</option>
+        </select>
+        <input type="submit" value="Register">
+        <a href="{{ url_for('registrants') }}"> see who is registered</a>
+    </form>
+</body>
+</html>

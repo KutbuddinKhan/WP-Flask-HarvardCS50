@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}
+    <title>search</title> 
+{% endblock%}
+
+{% block content %}
+    <h1>Search TEXT</h1>
+    <ul>
+        {% for result in results %}
+            <li>{{ result }}</li>
+        {% endfor%}
+    </ul>
+{% endblock %}
